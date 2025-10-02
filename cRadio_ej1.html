@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AA15</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form>
+        <p>¿Sos mayor de edad?</p>
+        <p><input type="radio" id="radio1" name="edad">Si</p>
+        <p><input type="radio" id="radio2" name="edad"><Nav></Nav>o</p>
+        <p><input type="button" value="Verificar" onClick="verificar()"></p>
+    </form>
+    <script>
+        function verificar() {
+            if (document.getElementById('radio1').checked) {
+                alert('Sos mayor de edad, puedes ingresar');
+            }
+            if (document.getElementById('radio2').checked) {
+                alert('No sos mayor de edad, no puedes ingresar');
+            }
+        }
+    </script>
+</body>
+</html>
